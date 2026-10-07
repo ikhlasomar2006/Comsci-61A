@@ -1,0 +1,13 @@
+# Provenance — do not let git rewrite these bytes.
+#
+# Every file in this directory is covered by a signature over its exact sha256.
+# Git's end-of-line filters (core.autocrlf, core.eol, "text=auto") rewrite LF to
+# CRLF when a file is checked out. That changes these bytes, and an untouched log
+# then looks modified to the analyzer.
+#
+# "-text" turns that translation off for this directory only. It overrides any
+# text/eol attribute set at the repository root, because attributes in a deeper
+# directory take precedence.
+#
+# Do not delete this file, and do not add text or eol attributes to it.
+* -text

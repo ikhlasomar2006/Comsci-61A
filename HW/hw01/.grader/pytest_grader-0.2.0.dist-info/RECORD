@@ -1,0 +1,15 @@
+bin/pytest-grader,sha256=YpnxlpqPWy0iR34dItOes4sVNJtNP4RGoOOr5_Zeg7U,350
+pytest_grader-0.2.0.dist-info/INSTALLER,sha256=5hhM4Q4mYTT9z6QB6PGpUAW81PGNFrYrdXMj4oM_6ak,2
+pytest_grader-0.2.0.dist-info/METADATA,sha256=_q2f3X2m8q1B-PZf06Cpw6ohYtNKXtFc9q9k_Ti7HLI,2649
+pytest_grader-0.2.0.dist-info/RECORD,,
+pytest_grader-0.2.0.dist-info/REQUESTED,sha256=47DEQpj8HBSa-_TImW-5JCeuQeRkm5NMpJWZG3hSuFU,0
+pytest_grader-0.2.0.dist-info/WHEEL,sha256=YVMoNqKzERt-wjUZwJ33xBGAwnFl-4cqbYkTtWa4itE,91
+pytest_grader-0.2.0.dist-info/entry_points.txt,sha256=eX6CUC81FGXq2sWufHViNmymRUCqJ4LqCbeybm6JSQU,61
+pytest_grader-0.2.0.dist-info/licenses/LICENSE,sha256=JtHeeJT6yqcd-1hG5jqxRHVJS2imy0Gj7CC6TSK8Nsw,1073
+pytest_grader-0.2.0.dist-info/top_level.txt,sha256=uMeNBa9jT1Hc3T6RACXxfFfuN3meyY_mwPIcTjvxdxo,14
+pytest_grader/__init__.py,sha256=d6fYse357lkUAaRstgRcSPPqWP8zM3XNmAARM7zrudU,159
+pytest_grader/__main__.py,sha256=G0DMAbYQAXkqi_RqaGWvfaGt5PBG8q2qxPvpFMC_u_w,134
+pytest_grader/cli.py,sha256=L2-C3SfHEGp88ZJOEcqPdgTRi_GJwH_ABc-SCJCgtP4,937
+pytest_grader/decorators.py,sha256=-EKmzFEDUx_aNM9QQOblvkRvtvpisbcjBhN0mxNXPMM,157
+pytest_grader/lock_tests.py,sha256=XPZFaYekbN7CZ4qcQHCuNQD5l6_86H8ZzE1YCaRLwk4,9154
+pytest_grader/plugins.py,sha256=w_tbUB919SczVZ-7UbNgFif8yvJzCE7ZguNIpjNm5Zw,10341
