@@ -135,14 +135,14 @@ def linked_sum(s: LinkedList[int], total: int) -> int:
     >>> linked_sum(Link(2, Link(4, Link(3))), 5)
     1
     """
-    if ____________________________:
+    if total == 0:
         return 1
-    elif ____________________________:
+    elif total < 0 or s is ():
         return 0
     else:
-        with_first = ____________________________
-        without_first = ____________________________
-        return ____________________________
+        with_first = linked_sum(s, total - s.first)
+        without_first = linked_sum(s.rest, total)
+        return with_first + without_first
 
 
 def max_pair_sum(s: LinkedList[int]) -> int:
@@ -154,10 +154,10 @@ def max_pair_sum(s: LinkedList[int]) -> int:
     >>> max_pair_sum(L(3, L(4, L(5, L(3, L(4, L(5, L(6, L(3))))))))) # 3+4 + 3+4 + 6+3
     23
     """
-    if ____________________________:
+    if s is () or s.rest is ():
         return 0
-    n = ____________________________
+    n = s.first + s.rest.first
     if not isinstance(s.rest.rest, Link):
         return n
     else:
-        return max(n + max_pair_sum(____________), max_pair_sum(____________))
+        return max(n + max_pair_sum(s.rest.rest.rest), max_pair_sum(s.rest))

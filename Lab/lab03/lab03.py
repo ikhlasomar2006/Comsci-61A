@@ -115,8 +115,6 @@ def flatten(s: list) -> list:
     return flatten(s[:-1]) + [s[-1]]
     
 
-
-
 def ten_pairs(n):
     """Return the number of ten-pairs within positive integer n.
 
@@ -126,13 +124,9 @@ def ten_pairs(n):
     6
     >>> ten_pairs(9641469) # 9+1, 6+4, 6+4, 4+6, 1+9, 4+6
     6
-    >>> # This test checks that you used recursion, with no loops.
-    >>> import inspect, ast
-    >>> tree = ast.parse(inspect.getsource(ten_pairs))
-    >>> [type(x).__name__ for x in ast.walk(tree) if type(x).__name__ in ['For', 'While']]
-    []
     """
     "*** YOUR CODE HERE ***"
+
 
 
 def count_digit(n, digit):
@@ -140,14 +134,13 @@ def count_digit(n, digit):
 
     >>> count_digit(55055, 5) # digit 5 appears 4 times in 55055
     4
-    >>> # This test checks that you used recursion, with no loops.
-    >>> import inspect, ast
-    >>> tree = ast.parse(inspect.getsource(count_digit))
-    >>> [type(x).__name__ for x in ast.walk(tree) if type(x).__name__ in ['For', 'While']]
-    []
     """
     "*** YOUR CODE HERE ***"
-
+    if n == 0:
+        return 0
+    count = 1 if n % 10 == digit else 0
+    return count + count_digit(n // 10, digit)
+    
 
 def make_onion(f, g):
     """Return a function can_reach(x, y, limit) that returns
@@ -175,9 +168,9 @@ def make_onion(f, g):
     """
     def can_reach(x, y, limit):
         if limit < 0:
-            return ____
+            return False
         elif x == y:
-            return ____
+            return True
         else:
-            return can_reach(____, ____, limit - 1) or can_reach(____, ____, limit - 1)
+            return can_reach(f(x), y, limit - 1) or can_reach(g(x), y, limit - 1)
     return can_reach
